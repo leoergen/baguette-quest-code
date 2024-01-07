@@ -1,0 +1,45 @@
+{
+  "name": "kaboom-starter-template",
+  "version": "0.0.1",
+  "description": "Kaboom.js demo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kgish/kaboomjs-starter-template.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build dist",
+    "lint": "eslint . --ext .ts && stylelint '**/*.scss'",
+    "lint:fix": "eslint . --ext .ts --fix && stylelint '**/*.scss' --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kiffin Gish <kiffin.gish@planet.nl> (https://github.com/kgish)",
+  "license": "MIT",
+  "dependencies": {
+    "kaboom": "^3000.1.17"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "parcel": "^2.10.3",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "typescript": "^5.3.2"
+  },
+  "alias": {
+    "kaboom": "./node_modules/kaboom/dist/kaboom.mjs"
+  },
+  "parcelCleanPaths": [
+    "dist"
+  ],
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**.*"
+  }
+}
