@@ -1,4 +1,4 @@
-import k from './kaboom';
+import {k} from './game';
 
 import { mainScene } from './scenes';
 
